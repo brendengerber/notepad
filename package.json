@@ -1,0 +1,16 @@
+{
+  "name": "photo-caption-contest",
+  "version": "1.0.0",
+  "description": "API to facilitate user login and a caption contest for some photos",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha test/**/*-test.js",
+    "start": "node server.js"
+  },
+  "author": "Brenden Gerber",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "pg-promise": "^11.5.4"
+  }
+}
