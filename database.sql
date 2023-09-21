@@ -1,3 +1,5 @@
+--Builds the initial tables for the project
+
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 CREATE TABLE "photos" (
@@ -16,4 +18,4 @@ CREATE TABLE "captions" (
   "photo_id" uuid REFERENCES photos(id) NOT NULL,
   "user_id" uuid REFERENCES users(id) NOT NULL,
   "caption" varchar(500) NOT NULL
-)
+);
