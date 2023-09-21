@@ -1,7 +1,8 @@
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 CREATE TABLE "photos" (
-  "id" uuid DEFAULT gen_random_uuid() PRIMARY KEY
+  "id" uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  "title" varchar(50) NOT NULL
 );
 
 CREATE TABLE "users" (
